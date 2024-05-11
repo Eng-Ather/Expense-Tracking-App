@@ -35,7 +35,7 @@ function income() {
   if (input) {
     Deposit.push(input);
     record.innerText = ` Last Transaction \n 
-  ${input}/= deposited at ${time} on dated : ${date} : ${month} : ${year} `;
+  ${input}/= \n deposited at ${time} on dated : ${date} : ${month} : ${year} `;
   }
   input = 0; // avoid garbage value
   document.getElementById("input").value = ""; // to empty input field
@@ -57,7 +57,7 @@ function expence() {
     if (expence) {
       Widthral.push(expence);
       record.innerText = ` Last Transaction \n 
-    ${expence}/=   widthdraw at ${time} on dated = ${date} : ${month} : ${year} `;
+    ${expence}/=  \n  widthdraw at ${time} on dated = ${date} : ${month} : ${year} `;
     }
     expence = 0; // clearing value to avoid carbeg value
     document.getElementById("input").value = ""; // to empty input field
